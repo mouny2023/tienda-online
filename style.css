@@ -35,9 +35,9 @@ body {
 
 /* --- SECCIONES GENERALES --- */
 section {
-  padding: 4em 2em;
-  min-height: 60vh;
+  padding: 4em 2em 40px 2em; /* arriba, derecha, abajo, izquierda */
 }
+
 
 section h2 {
   text-align: center;
@@ -263,7 +263,7 @@ section > h3::after {
 
 .carousel-wrapper {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   max-width: 100%;
   margin: auto;
 }
@@ -281,7 +281,7 @@ section > h3::after {
   flex-shrink: 0;
   position: relative;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   background: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
@@ -404,13 +404,13 @@ footer i:hover {
   padding: 0 !important;
   max-width: 100% !important;
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 
 
 .carousel-wrapper {
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
@@ -894,13 +894,22 @@ footer a:hover i {
   font-size: 16px;
 }
 
-#resultados-busqueda {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+#resultados-busqueda p {
+  font-style: italic;
+  font-size: 18px;
+  color: #666;
   margin-top: 30px;
+  width: 100%;
 }
+
+#resultados-busqueda p {
+  font-style: italic;
+  font-size: 18px;
+  color: #666;
+  margin-top: 30px;
+  width: 100%;
+}
+
 
 #resultados-busqueda .plato {
   background: white;
@@ -942,9 +951,159 @@ footer a:hover i {
   background-color: #b97f45;
 }
 
+.tarjeta-producto {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  overflow: visible;
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-producto:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta-producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.tarjeta-producto h3 {
+  font-size: 18px;
+  padding: 10px;
+  margin: 0;
+}
+
+.tarjeta-producto p {
+  color: #7a5a3f;
+  margin: 0 10px 10px;
+}
+
+.boton-agregar {
+  background-color: #d59b6c;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% - 20px);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-agregar:hover {
+  background-color: #b87f50;
+}
 #resultados-busqueda {
-  margin-top: 2em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1em;
+  margin-top: 20px;
+  min-height: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+/* Estilos base del buscador */
+#buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* Input de búsqueda */
+#input-busqueda {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+/* Botón lupa */
+#boton-buscar {
+  background-color: #d49d67;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+#boton-buscar:hover {
+  background-color: #c5874a;
+}
+
+
+
+/* Para dispositivos pequeños (móvil) */
+@media (max-width: 480px) {
+  #buscador {
+    flex-direction: column; /* No en columna */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  #input-busqueda {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  #boton-buscar {
+    padding: 10px 12px;
+    font-size: 16px;
+     width: 90%;
+  }
+}
+
+#buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 30px auto;
+  padding: 0 15px;
+  flex-wrap: wrap;
+}
+
+#input-busqueda {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#boton-buscar {
+  background-color: #d09662;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#boton-buscar:hover {
+  background-color: #b67c40;
+}
+
+@media (max-width: 480px) {
+  #buscador {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #input-busqueda,
+  #boton-buscar {
+    width: 90%;
+    font-size: 16px;
+  }
 }
