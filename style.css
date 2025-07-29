@@ -563,6 +563,7 @@ footer a:hover i {
   transform: scale(1.2);
 }
 /* RESPONSIVE */
+
 @media (max-width: 768px) {
   .banner h1 {
     font-size: 1.5em;
@@ -920,20 +921,15 @@ footer a:hover i {
   text-align: center;
   max-width: 180px;
 }
-.buscador-contenedor {
-  display: flex;
-  justify-content: center;
-  margin: 30px auto;
-  gap: 10px;
-}
 
 #input-busqueda {
   padding: 10px;
-  width: 80%;
+   width: 80vw;
   max-width: 400px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
+  
 }
 
 #boton-buscar {
@@ -945,6 +941,7 @@ footer a:hover i {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+   width: auto;
 }
 
 #boton-buscar:hover {
@@ -997,43 +994,44 @@ footer a:hover i {
 }
 #resultados-busqueda {
   margin-top: 20px;
-  min-height: 0;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
+
+ 
 /* Estilos base del buscador */
-#buscador {
+.buscador {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.buscador-contenedor {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 30px auto;
-  padding: 0 15px;
+  gap: 0.5em;
+  max-width: 90%;
 }
 
-/* Input de búsqueda */
+/* Input más largo en PC */
 #input-busqueda {
-  padding: 10px;
-  width: 80%;
-  max-width: 400px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  width: 400px;
+  padding: 12px;
   font-size: 16px;
-  flex-grow: 1;
 }
 
-/* Botón lupa */
+/* Botón */
 #boton-buscar {
-  background-color: #d49d67;
-  border: none;
-  padding: 10px;
+  padding: 12px 16px;
+  font-size: 16px;
   border-radius: 6px;
+  background-color: #c96;
+  border: none;
   cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.3s;
 }
 
 #boton-buscar:hover {
@@ -1043,23 +1041,15 @@ footer a:hover i {
 
 
 /* Para dispositivos pequeños (móvil) */
-@media (max-width: 480px) {
-  #buscador {
-    flex-direction: column; /* No en columna */
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+/* 🔁 Versión responsive */
+@media (max-width: 768px) {
+  .buscador-contenedor {
+    flex-direction: column;
+    width: 100%;
   }
 
   #input-busqueda {
-    width: 90%;
-    font-size: 16px;
-  }
-
-  #boton-buscar {
-    padding: 10px 12px;
-    font-size: 16px;
-     width: 90%;
+    width: 80vw;
   }
 }
 
