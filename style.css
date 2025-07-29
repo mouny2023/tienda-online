@@ -768,7 +768,7 @@ footer a:hover i {
   #carrito-flotante {
     font-size: 1.3rem;
     padding: 0.8rem 1.5rem;
-    top: 1.5rem;
+    bottom: 1.5rem;
     right: 1.5rem;
     position: fixed;
     border-radius: 50px;
