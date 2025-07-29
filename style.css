@@ -796,3 +796,47 @@ footer a:hover i {
     padding-right: 0.5em;
   }
 }
+@media (max-width: 600px) {
+  #carrito-flotante {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.4rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border-radius: 50px;
+    z-index: 1000;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    height: 60vh; /* podés bajarlo incluso a 50vh si querés más compacto */
+    background-position: center top;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .texto-banner h1 {
+    font-size: 1.4rem;
+  }
+
+  .texto-banner p {
+    font-size: 1rem;
+  }
+
+  .texto-banner button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar ul {
+    justify-content: center;
+    font-size: 1rem;
+    gap: 1.5rem;
+    padding: 0.8rem 0;
+  }
+
+  .navbar li {
+    text-align: center;
+  }
+}
