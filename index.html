@@ -1,0 +1,315 @@
+<body>
+  <div class="banner">
+  <div class="texto-banner">
+    <h1>Bienvenido a Sabores Árabes y Argentinos</h1>
+    <p>Comida tradicional hecha con pasión.</p>
+    
+    <a href="#menu">
+      <button>Ver Menú</button>
+    </a>
+  </div>
+</div>
+
+  <header>
+
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      
+    </nav>
+    
+  </header>
+<!-- CARRITO DE COMPRAS -->
+<!-- Carrito flotante -->
+<div id="carrito-flotante">
+  🛒 <span id="cantidad-carrito">0</span>
+</div>
+
+<!-- Ventana emergente del carrito -->
+<div id="carrito-popup" class="oculto">
+  <h3>Carrito</h3>
+  <ul id="lista-carrito"></ul>
+  <p><strong>Total:</strong> $<span id="total">0</span></p>
+
+  <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito 🗑️</button>
+
+<button class="btn-whatsapp" onclick="abrirFormulario()">Enviar pedido por WhatsApp</button>
+  
+</div>
+
+
+
+
+<section id="inicio" class="inicio-frase">
+  <h2>El sabor que une culturas</h2>
+  <section class="hero-carousel">
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" onclick="moverCarrusel(-1)">❮</button>
+
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide">
+          <img src="images/shawarma de carne.png" alt="Shawarma de carne">
+          <p>Shawarma de carne</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/hummus.png" alt="Hummus">
+          <p>Hummus</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/kebabs.png" alt="Kebabs">
+          <p>Kebab con arroz</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/fatay.png" alt="Fatay">
+          <p>Fatay</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/falafel.png" alt="Falafel">
+          <p>Falafel</p>
+        </div>
+      </div>
+
+      <button class="carousel-btn right" onclick="moverCarrusel(1)">❯</button>
+    </div>
+
+    <div class="ver-menu-container">
+      <a href="#menu" class="ver-menu-btn">Ver Menú</a>
+    </div>
+  </section>
+</section>
+
+
+
+
+
+<section id="menu">
+  <h2>Menú</h2>
+  <h3>Platos Salados</h3>
+    <div class="galeria">
+      <div class="plato">
+        <img src="images/pan-arabe.png" alt="Pan Árabe">
+        <h3>Pan Árabe</h3>
+        <p>$1200</p>
+        <button onclick="agregarAlCarrito('Pan Árabe', 1200)">Agregar al carrito</button>
+      </div>
+      <div class="plato">
+        <img src="images/kebabs.png" alt="Kebabs">
+        <h3>Kebab con arroz y ensalada</h3>
+        <p>$3500</p>
+        <button onclick="agregarAlCarrito('Kebab con arroz y ensalada', 3500)">Agregar al carrito</button>
+      </div>
+      <div class="plato">
+        <img src="images/empanadas.png" alt="Empanadas">
+        <h3>Empanadas de carne</h3>
+        <p>$2000 la docena</p>
+        <button onclick="agregarAlCarrito('Empanadas de carne', 2000)">Agregar al carrito</button>
+      </div>
+      <div class="plato">
+        <img src="images/hummus.png" alt="Hummus">
+        <h3>Hummus</h3>
+        <p>$1800</p>
+        <button onclick="agregarAlCarrito('Hummus', 1800)">Agregar al carrito</button>
+      </div>
+      <div class="plato">
+        <img src="images/falafel.png" alt="Falafel">
+        <h3>Falafel</h3>
+        <p>$2200</p>
+        <button onclick="agregarAlCarrito('Falafel', 2200)">Agregar al carrito</button>
+      </div>
+      <div class="plato">
+        <img src="images/fatay.png" alt="Fatay">
+        <h3>Fatay</h3>
+        <p>$2000</p>
+        <button onclick="agregarAlCarrito('Fatay', 2000)">Agregar al carrito</button>
+      </div>
+      <div class="plato"> <img src="images/shawarma de carne.png" alt="Shawarma de carne"><h3>Shawarma de carne</h3><p>$3700</p><button onclick="agregarAlCarrito('Shawarma de carne', 3700)">Agregar al carrito</button></div>
+      <div class="plato"> <img src="images/Arroz con cordero.png" alt="Arroz con cordero"><h3>Arroz con cordero</h3><p>$4000</p><button onclick="agregarAlCarrito('Arroz con cordero', 4000)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Pollo al limón con papas</h3><p>$3500</p><button onclick="agregarAlCarrito('Pollo al limón con papas', 3500)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Moussaka</h3><p>$3600</p><button onclick="agregarAlCarrito('Moussaka', 3600)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Arrollado de carne</h3><p>$3300</p><button onclick="agregarAlCarrito('Arrollado de carne', 3300)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Costillitas al horno</h3><p>$4200</p><button onclick="agregarAlCarrito('Costillitas al horno', 4200)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Ñoquis con estofado</h3><p>$2900</p><button onclick="agregarAlCarrito('Ñoquis con estofado', 2900)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Guiso de lentejas</h3><p>$3100</p><button onclick="agregarAlCarrito('Guiso de lentejas', 3100)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Tarta de carne y queso</h3><p>$2700</p><button onclick="agregarAlCarrito('Tarta de carne y queso', 2700)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Locro</h3><p>$3900</p><button onclick="agregarAlCarrito('Locro', 3900)">Agregar al carrito</button></div>
+    </div>
+
+
+
+  </div>
+    <h3>Veggie</h3>
+    <div class="galeria">
+      <div class="plato"><h3>Hummus con pan árabe</h3><p>$2500</p><button onclick="agregarAlCarrito('Hummus con pan árabe', 2500)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Tabbule</h3><p>$2800</p><button onclick="agregarAlCarrito('Tabbule', 2800)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Falafel con ensalada y salsa tahini</h3><p>$3200</p><button onclick="agregarAlCarrito('Falafel con ensalada y salsa tahini', 3200)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Empanadas de verdura</h3><p>$2000 la docena</p><button onclick="agregarAlCarrito('Empanadas de verdura', 2000)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Berenjenas asadas con salsa de yogur</h3><p>$3000</p><button onclick="agregarAlCarrito('Berenjenas asadas con salsa de yogur', 3000)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Zanahorias glaseadas con comino</h3><p>$2200</p><button onclick="agregarAlCarrito('Zanahorias glaseadas con comino', 2200)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Ensalada de lentejas y vegetales</h3><p>$2600</p><button onclick="agregarAlCarrito('Ensalada de lentejas y vegetales', 2600)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Rollitos de repollo rellenos</h3><p>$3100</p><button onclick="agregarAlCarrito('Rollitos de repollo rellenos', 3100)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Coliflor frita con tahini</h3><p>$2900</p><button onclick="agregarAlCarrito('Coliflor frita con tahini', 2900)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Zapallitos rellenos vegetarianos</h3><p>$3200</p><button onclick="agregarAlCarrito('Zapallitos rellenos vegetarianos', 3200)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Puré de berenjena (Baba Ganoush)</h3><p>$2700</p><button onclick="agregarAlCarrito('Baba Ganoush', 2700)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Ensalada de garbanzos</h3><p>$2400</p><button onclick="agregarAlCarrito('Ensalada de garbanzos', 2400)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Batata al horno con especias</h3><p>$2300</p><button onclick="agregarAlCarrito('Batata al horno con especias', 2300)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Tomates rellenos de couscous</h3><p>$2600</p><button onclick="agregarAlCarrito('Tomates rellenos de couscous', 2600)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Mini brochetas vegetarianas</h3><p>$3100</p><button onclick="agregarAlCarrito('Mini brochetas vegetarianas', 3100)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Couscous con vegetales</h3><p>$2800</p><button onclick="agregarAlCarrito('Couscous con vegetales', 2800)">Agregar al carrito</button></div>
+    </div>
+
+
+<h3>Bebidas</h3>
+    <div class="galeria">
+      <div class="plato"><h3>Jugo de granada</h3><p>$1500</p><button onclick="agregarAlCarrito('Jugo de granada', 1500)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Limonada con menta</h3><p>$1300</p><button onclick="agregarAlCarrito('Limonada con menta', 1300)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Jugo natural de naranja</h3><p>$1200</p><button onclick="agregarAlCarrito('Jugo natural de naranja', 1200)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Té de menta árabe</h3><p>$1100</p><button onclick="agregarAlCarrito('Té de menta árabe', 1100)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Café árabe con cardamomo</h3><p>$1600</p><button onclick="agregarAlCarrito('Café árabe con cardamomo', 1600)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Agua mineral</h3><p>$900</p><button onclick="agregarAlCarrito('Agua mineral', 900)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Soda saborizada</h3><p>$950</p><button onclick="agregarAlCarrito('Soda saborizada', 950)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Agua saborizada casera</h3><p>$1000</p><button onclick="agregarAlCarrito('Agua saborizada casera', 1000)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Batido de dátiles</h3><p>$1700</p><button onclick="agregarAlCarrito('Batido de dátiles', 1700)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Malta</h3><p>$1400</p><button onclick="agregarAlCarrito('Malta', 1400)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Refresco de tamarindo</h3><p>$1500</p><button onclick="agregarAlCarrito('Refresco de tamarindo', 1500)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Té negro especiado</h3><p>$1100</p><button onclick="agregarAlCarrito('Té negro especiado', 1100)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Café con leche</h3><p>$1200</p><button onclick="agregarAlCarrito('Café con leche', 1200)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Licuado de frutas</h3><p>$1400</p><button onclick="agregarAlCarrito('Licuado de frutas', 1400)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Agua de azahar con miel</h3><p>$1600</p><button onclick="agregarAlCarrito('Agua de azahar con miel', 1600)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Infusión digestiva árabe</h3><p>$1200</p><button onclick="agregarAlCarrito('Infusión digestiva árabe', 1200)">Agregar al carrito</button></div>
+    </div>
+    <h3>Dulces</h3>
+    <div class="galeria">
+      <div class="plato"><h3>Baklava</h3><p>$2800</p><button onclick="agregarAlCarrito('Baklava', 2800)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Mamoul</h3><p>$1500</p><button onclick="agregarAlCarrito('Mamoul', 1500)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Dátiles con nuez</h3><p>$1000</p><button onclick="agregarAlCarrito('Dátiles con nuez', 1000)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Dulce de batata con queso</h3><p>$1800</p><button onclick="agregarAlCarrito('Dulce de batata con queso', 1800)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Arroz con leche</h3><p>$1200</p><button onclick="agregarAlCarrito('Arroz con leche', 1200)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Flan casero</h3><p>$1400</p><button onclick="agregarAlCarrito('Flan casero', 1400)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Torta árabe de sémola</h3><p>$2600</p><button onclick="agregarAlCarrito('Torta árabe de sémola', 2600)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Halva de pistacho</h3><p>$2400</p><button onclick="agregarAlCarrito('Halva de pistacho', 2400)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Maamoul con nueces</h3><p>$1500</p><button onclick="agregarAlCarrito('Maamoul con nueces', 1500)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Pastelitos árabes</h3><p>$1700</p><button onclick="agregarAlCarrito('Pastelitos árabes', 1700)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Budín de dátiles</h3><p>$1900</p><button onclick="agregarAlCarrito('Budín de dátiles', 1900)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Bizcocho con miel</h3><p>$1600</p><button onclick="agregarAlCarrito('Bizcocho con miel', 1600)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Knafeh</h3><p>$3000</p><button onclick="agregarAlCarrito('Knafeh', 3000)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Cheesecake de ricota y azahar</h3><p>$3200</p><button onclick="agregarAlCarrito('Cheesecake de ricota y azahar', 3200)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Torta húmeda de naranja</h3><p>$2000</p><button onclick="agregarAlCarrito('Torta húmeda de naranja', 2000)">Agregar al carrito</button></div>
+      <div class="plato"><h3>Trufas de dátiles y coco</h3><p>$1500</p><button onclick="agregarAlCarrito('Trufas de dátiles y coco', 1500)">Agregar al carrito</button></div>
+    </div>
+  </section>
+
+
+
+</section>
+
+
+
+
+<section id="nosotros">
+  <h2>Nosotros</h2>
+  <p class="descripcion-nosotros">
+    Somos una familia que fusiona sabores y tradiciones. Un puente entre culturas donde la cocina árabe y argentina se encuentran para celebrar lo auténtico.
+  </p>
+<div class="banderas-union">
+  <img src="images/bandera-argentina.png" alt="Bandera Argentina">
+  <span class="emoji-union">🤝</span>
+  <img src="images/bandera-libano.png" alt="Bandera Líbano">
+</div>
+</section>
+
+
+
+
+
+<section id="contacto">
+  <h2>Contacto</h2>
+ <p><i class="fab fa-whatsapp"></i> <strong>Hacé tu pedido por WhatsApp:</strong> 
+  <a href="https://wa.me/1550362620" target="_blank" style="color: green; font-weight: bold;">Enviar mensaje</a>
+</p>
+
+  <p><i class="fas fa-clock"></i> <strong>Horario de atención:</strong> Lunes a sábados de 11:00 a 20:00 hs</p>
+<p style="margin-top: 1em; font-weight: bold;">¡Consultanos sin compromiso! Estamos para ayudarte.</p>
+<div style="margin-top: 2em;">
+  <p><strong>Dirección:</strong> Av. Sabor Árabe 123, Buenos Aires, Argentina</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.739176756206!2d-58.41730942427198!3d-34.63452285965762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2ab1f8376b%3A0x2c7f2f66f7274f7b!2sAv.%20Sabor%20%C3%81rabe%20123!5e0!3m2!1ses-419!2sar!4v1722100600000!5m2!1ses-419!2sar"
+    width="100%"
+    height="300"
+    style="border:0; border-radius: 10px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+</section>
+
+
+<footer>
+  <p>© 2025 Sabores Árabes y Argentinos. Todos los derechos reservados.</p>
+  <p>
+    Seguinos en:
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/1550362620" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </p>
+<div class="iconos-pago">
+  <img src="images/visa.png" alt="Visa">
+  <img src="images/mastercard.png" alt="MasterCard">
+  <img src="images/mercadopago.png" alt="Mercado Pago">
+  <img src="images/cuentadni.png" alt="Cuenta DNI">
+  <img src="images/qr.png" alt="Pago con QR" id="qr-icon" style="cursor: pointer;">
+</div>
+
+<!-- Popup QR oculto -->
+<!-- Popup QR oculto -->
+<div id="qr-popup" class="oculto">
+  <div class="qr-contenido">
+    <img src="images/qr.png" alt="QR grande">
+    <p>Escaneá con tu app para pagar con Cuenta DNI o Mercado Pago</p>
+    <button onclick="cerrarQR()">Cerrar</button>
+  </div>
+</div>
+
+</div>
+<!-- FORMULARIO DE DATOS DEL CLIENTE -->
+<div id="formulario-cliente" class="oculto">
+  <div class="formulario-contenido">
+    <h3>Completá tus datos</h3>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Tu nombre completo">
+
+    <label for="entrega">Forma de entrega:</label>
+    <select id="entrega">
+      <option value="retiro">Retiro en el local</option>
+      <option value="envio">Envío a domicilio</option>
+    </select>
+
+    <label for="hora">Horario deseado:</label>
+    <input type="text" id="hora" placeholder="Ej: 13:30 hs">
+
+    <button onclick="enviarPedido()">Enviar pedido</button>
+    <button onclick="cerrarFormulario()">Cancelar</button>
+  </div>
+</div>
+
+</footer>
+
+  <!-- JavaScript -->
+  <script src="carrito.js"></script>
+  <script src="carousel.js"></script>
+  <script src="pago.js"></script>
+
+</body>
