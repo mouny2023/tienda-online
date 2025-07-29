@@ -1,0 +1,266 @@
+{
+  "Platos Salados": [
+    {
+      "nombre": "Pan Árabe",
+      "precio": 1200
+    },
+    {
+      "nombre": "Kebab con arroz y ensalada",
+      "precio": 3500
+    },
+    {
+      "nombre": "Empanadas de carne",
+      "precio": 2000
+    },
+    {
+      "nombre": "Hummus",
+      "precio": 1800
+    },
+    {
+      "nombre": "Falafel",
+      "precio": 2200
+    },
+    {
+      "nombre": "Fatay",
+      "precio": 2000
+    },
+    {
+      "nombre": "Shawarma de carne",
+      "precio": 3700
+    },
+    {
+      "nombre": "Arroz con cordero",
+      "precio": 4000
+    },
+    {
+      "nombre": "Pollo al limón con papas",
+      "precio": 3500
+    },
+    {
+      "nombre": "Moussaka",
+      "precio": 3600
+    },
+    {
+      "nombre": "Arrollado de carne",
+      "precio": 3300
+    },
+    {
+      "nombre": "Costillitas al horno",
+      "precio": 4200
+    },
+    {
+      "nombre": "Ñoquis con estofado",
+      "precio": 2900
+    },
+    {
+      "nombre": "Guiso de lentejas",
+      "precio": 3100
+    },
+    {
+      "nombre": "Tarta de carne y queso",
+      "precio": 2700
+    },
+    {
+      "nombre": "Locro",
+      "precio": 3900
+    }
+  ],
+  "Veggie": [
+    {
+      "nombre": "Hummus con pan árabe",
+      "precio": 2500
+    },
+    {
+      "nombre": "Tabbule",
+      "precio": 2800
+    },
+    {
+      "nombre": "Falafel con ensalada y salsa tahini",
+      "precio": 3200
+    },
+    {
+      "nombre": "Empanadas de verdura",
+      "precio": 2000
+    },
+    {
+      "nombre": "Berenjenas asadas con salsa de yogur",
+      "precio": 3000
+    },
+    {
+      "nombre": "Zanahorias glaseadas con comino",
+      "precio": 2200
+    },
+    {
+      "nombre": "Ensalada de lentejas y vegetales",
+      "precio": 2600
+    },
+    {
+      "nombre": "Rollitos de repollo rellenos",
+      "precio": 3100
+    },
+    {
+      "nombre": "Coliflor frita con tahini",
+      "precio": 2900
+    },
+    {
+      "nombre": "Zapallitos rellenos vegetarianos",
+      "precio": 3200
+    },
+    {
+      "nombre": "Baba Ganoush",
+      "precio": 2700
+    },
+    {
+      "nombre": "Ensalada de garbanzos",
+      "precio": 2400
+    },
+    {
+      "nombre": "Batata al horno con especias",
+      "precio": 2300
+    },
+    {
+      "nombre": "Tomates rellenos de couscous",
+      "precio": 2600
+    },
+    {
+      "nombre": "Mini brochetas vegetarianas",
+      "precio": 3100
+    },
+    {
+      "nombre": "Couscous con vegetales",
+      "precio": 2800
+    }
+  ],
+  "Bebidas": [
+    {
+      "nombre": "Jugo de granada",
+      "precio": 1500
+    },
+    {
+      "nombre": "Limonada con menta",
+      "precio": 1300
+    },
+    {
+      "nombre": "Jugo natural de naranja",
+      "precio": 1200
+    },
+    {
+      "nombre": "Té de menta árabe",
+      "precio": 1100
+    },
+    {
+      "nombre": "Café árabe con cardamomo",
+      "precio": 1600
+    },
+    {
+      "nombre": "Agua mineral",
+      "precio": 900
+    },
+    {
+      "nombre": "Soda saborizada",
+      "precio": 950
+    },
+    {
+      "nombre": "Agua saborizada casera",
+      "precio": 1000
+    },
+    {
+      "nombre": "Batido de dátiles",
+      "precio": 1700
+    },
+    {
+      "nombre": "Malta",
+      "precio": 1400
+    },
+    {
+      "nombre": "Refresco de tamarindo",
+      "precio": 1500
+    },
+    {
+      "nombre": "Té negro especiado",
+      "precio": 1100
+    },
+    {
+      "nombre": "Café con leche",
+      "precio": 1200
+    },
+    {
+      "nombre": "Licuado de frutas",
+      "precio": 1400
+    },
+    {
+      "nombre": "Agua de azahar con miel",
+      "precio": 1600
+    },
+    {
+      "nombre": "Infusión digestiva árabe",
+      "precio": 1200
+    }
+  ],
+  "Dulces": [
+    {
+      "nombre": "Baklava",
+      "precio": 2800
+    },
+    {
+      "nombre": "Mamoul",
+      "precio": 1500
+    },
+    {
+      "nombre": "Dátiles con nuez",
+      "precio": 1000
+    },
+    {
+      "nombre": "Dulce de batata con queso",
+      "precio": 1800
+    },
+    {
+      "nombre": "Arroz con leche",
+      "precio": 1200
+    },
+    {
+      "nombre": "Flan casero",
+      "precio": 1400
+    },
+    {
+      "nombre": "Torta árabe de sémola",
+      "precio": 2600
+    },
+    {
+      "nombre": "Halva de pistacho",
+      "precio": 2400
+    },
+    {
+      "nombre": "Maamoul con nueces",
+      "precio": 1500
+    },
+    {
+      "nombre": "Pastelitos árabes",
+      "precio": 1700
+    },
+    {
+      "nombre": "Budín de dátiles",
+      "precio": 1900
+    },
+    {
+      "nombre": "Bizcocho con miel",
+      "precio": 1600
+    },
+    {
+      "nombre": "Knafeh",
+      "precio": 3000
+    },
+    {
+      "nombre": "Cheesecake de ricota y azahar",
+      "precio": 3200
+    },
+    {
+      "nombre": "Torta húmeda de naranja",
+      "precio": 2000
+    },
+    {
+      "nombre": "Trufas de dátiles y coco",
+      "precio": 1500
+    }
+  ]
+}
