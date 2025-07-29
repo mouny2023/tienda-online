@@ -744,29 +744,39 @@ footer a:hover i {
 }
 @media (max-width: 600px) {
   .banner {
-    height: 60vh;
-    background-attachment: scroll; /* para evitar problemas de salto */
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
   }
 
   .texto-banner h1 {
-    font-size: 1.2em;
+    font-size: 1.4rem;
   }
 
   .texto-banner p {
-    font-size: 0.9em;
+    font-size: 1rem;
   }
 
   .texto-banner button {
-    font-size: 0.9em;
-    padding: 0.5em 1em;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
 }
+
 @media (max-width: 600px) {
   #carrito-flotante {
-    font-size: 1em;
-    padding: 0.9em 1.4em;
+    font-size: 1.3rem;
+    padding: 0.8rem 1.5rem;
+    top: 1.5rem;
+    right: 1.5rem;
+    position: fixed;
     border-radius: 50px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
+
+
 
   #carrito-popup {
     width: 90vw;
