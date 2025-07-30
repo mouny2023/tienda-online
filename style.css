@@ -1106,21 +1106,24 @@ footer a:hover i {
     font-size: 16px;
   }
 }
-#notificacion-exito {
+.notificacion-exito {
   position: fixed;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #28a745;
+  background-color: #4CAF50;
   color: white;
-  padding: 1em 2em;
+  padding: 15px 25px;
   border-radius: 8px;
-  font-size: 1rem;
-  z-index: 9999;
+  font-size: 16px;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 9999;
 }
 
-#notificacion-exito.mostrar {
+.notificacion-exito.mostrar {
   opacity: 1;
+  pointer-events: auto;
 }
+
