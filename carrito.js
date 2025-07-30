@@ -83,3 +83,10 @@ function enviarPedido() {
   cerrarFormulario();
   vaciarCarrito();
 }
+// 🔵 Mostrar notificación
+  const notificacion = document.getElementById("notificacion-exito");
+  notificacion.classList.add("mostrar");
+
+  setTimeout(() => {
+    notificacion.classList.remove("mostrar");
+  }, 3000);
